@@ -232,7 +232,7 @@ public class Start extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(bntGetFunction, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(alert))
-                .addContainerGap(98, Short.MAX_VALUE))
+                .addContainerGap(90, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -245,7 +245,7 @@ public class Start extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 20, Short.MAX_VALUE))
         );
 
         pack();
@@ -291,10 +291,13 @@ public class Start extends javax.swing.JFrame {
     private void bntGetFunctionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntGetFunctionActionPerformed
         int n = !textN.getText().isEmpty() ? Integer.parseInt(textN.getText()) : 0;
         int a = !textA.getText().isEmpty() ? Integer.parseInt(textA.getText()) : 0;
-        int b = !textA.getText().isEmpty() ? Integer.parseInt(textA.getText()) : 0;
+        int b = !textB.getText().isEmpty() ? Integer.parseInt(textB.getText()) : 0;
+        
+        System.out.println("mcd: " + maximoComunDivisor(a, b));
         
         if(maximoComunDivisor(a, b) == 1){
-            encryptFunction.setText("C = ");
+            
+            encryptFunction.setText("C = " + String.valueOf(a) + " p + " + String.valueOf(b) + " mod " + String.valueOf(n));
         }else {
             alert.setVisible(true);
         }
