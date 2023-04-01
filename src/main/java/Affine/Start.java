@@ -44,6 +44,7 @@ public class Start extends javax.swing.JFrame {
         decryptFunction = new javax.swing.JLabel();
         encryptFunction = new javax.swing.JLabel();
         alert = new javax.swing.JLabel();
+        decryptFunction1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -152,47 +153,52 @@ public class Start extends javax.swing.JFrame {
         alert.setForeground(new java.awt.Color(255, 0, 0));
         alert.setText("El valor no es válido, ingresa otro valor");
 
+        decryptFunction1.setFont(new java.awt.Font("Cambria Math", 0, 18)); // NOI18N
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(close_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(22, 22, 22))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(49, 49, 49)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(bntGetFunction, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(title)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(ins)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                        .addGap(49, 49, 49)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(bntGetFunction, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(title)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(ins)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(38, 38, 38)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(titlee)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(textA, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(title2)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(textN))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(titleb)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(textB)))))))
+                        .addGap(105, 105, 105)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(decryptFunction, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(38, 38, 38)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(titlee)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(textA, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(title2)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(textN))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(titleb)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(textB)))))))
-                .addGap(105, 105, 105)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(title5)
-                    .addComponent(title6)
+                                    .addComponent(title5)
+                                    .addComponent(title6)
+                                    .addComponent(encryptFunction)
+                                    .addComponent(alert))
+                                .addGap(166, 166, 166))
+                            .addComponent(decryptFunction1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(decryptFunction))
-                    .addComponent(encryptFunction)
-                    .addComponent(alert))
-                .addContainerGap(166, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(close_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(22, 22, 22))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -220,15 +226,18 @@ public class Start extends javax.swing.JFrame {
                         .addGap(13, 13, 13)
                         .addComponent(title6)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(titlee)
-                    .addComponent(textA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(decryptFunction))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(titleb)
-                    .addComponent(textB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(decryptFunction, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(titlee)
+                        .addComponent(textA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(4, 4, 4)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(decryptFunction1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(titleb)
+                        .addComponent(textB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(bntGetFunction, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(alert))
@@ -245,7 +254,7 @@ public class Start extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 20, Short.MAX_VALUE))
+                .addGap(0, 10, Short.MAX_VALUE))
         );
 
         pack();
@@ -295,12 +304,19 @@ public class Start extends javax.swing.JFrame {
         
         System.out.println("mcd: " + maximoComunDivisor(a, b));
         
-        if(maximoComunDivisor(a, b) == 1){
-            
-            encryptFunction.setText("C = " + String.valueOf(a) + " p + " + String.valueOf(b) + " mod " + String.valueOf(n));
+        if(b > 0 && b <= n){
+                calculateDecryptFun(n, a, b);
         }else {
             alert.setVisible(true);
+            alert.setText("Se calculó un equivalente para ß = " + b);
+            b = b%n;
+            textB.setText(String.valueOf(b));
+            calculateDecryptFun(n, a, b);
+            
         }
+        
+        
+        
         
         
     }//GEN-LAST:event_bntGetFunctionActionPerformed
@@ -325,6 +341,49 @@ public class Start extends javax.swing.JFrame {
             a = temporal;
         }
         return a;
+    }
+    
+    public static int[] Extendido(int a, int b) { //Algoritmo de euclides Extendido
+        int[] numeros = new int[2];
+        if (b == 0) {
+          numeros[0] = 1;
+          numeros[1] = 0;
+          return numeros;
+        }
+        int[] temp = Extendido(b, a % b); // Valores que se pasan como a b
+        numeros[0] = temp[1];
+        numeros[1] = temp[0] - (a / b) * temp[1];
+        return numeros;
+      }
+    
+    public void calculateDecryptFun(int n, int a, int b) {
+        if(maximoComunDivisor(a, b) == 1){
+
+                encryptFunction.setVisible(true);
+                decryptFunction.setVisible(true);
+                decryptFunction1.setVisible(true);
+
+                encryptFunction.setText("C = " + String.valueOf(a) + " p + " + String.valueOf(b) + " mod " + String.valueOf(n));
+
+                int[] numeros = Extendido(a, n);
+
+                decryptFunction.setText("Ecuación: " + a + " * " + numeros[0] + " + " + b + " * " + numeros[1] + " = " + maximoComunDivisor(a, b));
+
+                //P= x(C-(ß-n)mod n
+                
+                if(numeros[0] < 0) {
+                    numeros[0] = n + numeros[0];
+                }
+                decryptFunction.setText("p = " + numeros[0] + " (C + " + String.valueOf((n - b)) + ") mod " + n);
+                decryptFunction1.setText("p = " + numeros[0] + " C + " + String.valueOf(numeros[0]* (n - b) % n) + " mod " + n);
+
+            }else {
+                alert.setVisible(true);
+                alert.setText("El valor de a no es válido, ingresa otro valor");
+                encryptFunction.setVisible(false);
+                decryptFunction.setVisible(false);
+                decryptFunction1.setVisible(false);
+            }
     }
     
     public static void main(String args[]) {
@@ -358,6 +417,7 @@ public class Start extends javax.swing.JFrame {
     private javax.swing.JButton bntGetFunction;
     private javax.swing.JButton close_btn;
     private javax.swing.JLabel decryptFunction;
+    private javax.swing.JLabel decryptFunction1;
     private javax.swing.JLabel encryptFunction;
     private javax.swing.JLabel ins;
     private javax.swing.JPanel jPanel1;
